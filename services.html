@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Grappa - Dashboard
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tinos:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <a class="navbar-item is-large" href="" style="font-family: 'Tinos',serif">
+            Grappa
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <p class="control"><input class="input" type="text" placeholder="Buscar cursos, personas o instituciones">
+                        </p>
+                        <p class="control"><button class="button"><i class="fa fa-search" aria-hidden="true"></i></button></p>
+                    </div>
+                </div>
+                <a class="navbar-item">Materias</a>
+                <a class="navbar-item">Cursos</a>
+                <a class="navbar-item">Eventos</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Más</a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">About</a>
+                        <a class="navbar-item">Jobs</a>
+                        <a class="navbar-item">Contact</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">Report an issue</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless">
+                        <i class="fa fa-lg fa-bell has-text-grey-light"></i>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <span class="navbar-item">
+                            <strong>Usuario</strong> te dejó un comentario en <strong> curso</strong>
+                        </span>
+                        <span class="navbar-item">
+                            Parcial 1 de <strong>Redes de Computadoras</strong>.
+                        </span>
+                        <span class="navbar-item">
+                            Recibiste una calificación en <strong>TP 1</strong>.
+                        </span>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless has-icons-left">
+                        <figure class="image is-32x32 is-left">
+                            <img class="is-rounded" src="https://cnaca.ca/wp-content/uploads/2018/10/user-icon-image-placeholder.jpg">
+                        </figure>
+                        Nombre Alumno
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item">Mensajes</a>
+                        <a class="navbar-item">Calendario</a>
+                        <a class="navbar-item">Libros</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="user_profile.html">Perfil</a>
+                        <a class="navbar-item">Cerrar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- cards -->
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-3">
+                <div class="tile is-child">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="https://mi.unc.edu.ar/apps-images/gsuite.png" alt="Placeholder image" width="700">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Google Suite</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                GSuite es un servicio de Google que nos permite acceder a aplicaciones tales como Gmail, Drive, Calendar, entre otros.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button class="button card-footer-item" onclick='sync(this)'>Conectar a Grappa</ba>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+            <div class="tile is-parent is-3">
+        <div class="tile is-child">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/dropbox-logo@2x.jpg" alt="Placeholder image" width="700">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Dropbox</p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        GSuite es un servicio de Google que nos permite acceder a aplicaciones tales como Gmail, Drive, Calendar, entre otros.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <button class="button card-footer-item" onclick='sync(this)'>Conectar a Grappa</ba>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div class="tile is-parent is-3">
+    <div class="tile is-child">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image">
+                    <img src="https://www.utn.edu.ar/images/Secretarias/TIC/zoom-webinars-videoconferencias-tutorial.jpg" alt="Placeholder image" width="700">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">Zoom</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    GSuite es un servicio de Google que nos permite acceder a aplicaciones tales como Gmail, Drive, Calendar, entre otros.
+                </div>
+            </div>
+            <footer class="card-footer">
+                <button class="button card-footer-item" onclick='sync(this)'>Conectar a Grappa</ba>
+        </footer>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+    <!-- /cards -->
+
+    <script type='text/javascript'>
+    function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+        async function sync(el) {
+            el.classList.add("is-loading");
+            await sleep(1000);
+            el.classList.remove("is-loading");
+            el.textContent="Conectado!";
+        }
+    </script>
+</body>
+
+</html>
