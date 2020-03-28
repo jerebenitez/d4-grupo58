@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Grappe - Redes de Computadoras
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tinos:700&display=swap" rel="stylesheet">
+    <style>
+        .menu-container {
+            position: fixed;
+            margin: auto;
+            padding-top: 0.75rem;
+            margin-left: 0.75rem;
+            min-width: 230px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <!--<div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <i class="fa fa-lg fa-bars" aria-hidden="true"></i>
+            </a>-->
+        <a class="navbar-item is-large" href="" style="font-family: 'Tinos',serif">
+            Grappe
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <p class="control"><input class="input" type="text" placeholder="Buscar cursos, personas o instituciones">
+                        </p>
+                        <p class="control"><button class="button"><i class="fa fa-search" aria-hidden="true"></i></button></p>
+                    </div>
+                </div>
+                <a class="navbar-item">Materias</a>
+                <a class="navbar-item">Cursos</a>
+                <a class="navbar-item">Eventos</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Más</a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">About</a>
+                        <a class="navbar-item">Jobs</a>
+                        <a class="navbar-item">Contact</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">Report an issue</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-link is-arrowless">
+                        <i class="fa fa-lg fa-bell has-text-grey-light"></i>
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item">
+                            <strong>Usuario</strong> te dejó un comentario en <strong>curso</strong>
+                        </a>
+                        <a class="navbar-item"></a>
+                        <a class="navbar-item"></a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless has-icons-left">
+                        <figure class="image is-32x32 is-left">
+                            <img class="is-rounded" src="https://cnaca.ca/wp-content/uploads/2018/10/user-icon-image-placeholder.jpg">
+                        </figure>
+                        Nombre Alumno
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item">Mensajes</a>
+                        <a class="navbar-item">Calendario</a>
+                        <a class="navbar-item">Libros</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="user_profile.html">Perfil</a>
+                        <a class="navbar-item">Cerrar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body has-text-centered">
+            <div class="container">
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="https://mediad.publicbroadcasting.net/p/wkar/files/styles/x_large/public/claude_shannon.jpg">
+                </figure>
+                <h1 class="title">
+                    Claude Shannon
+                </h1>
+                <h2 class="subtitle">
+                    Ingeniería Eléctrica
+                </h2>
+                <div class="level">
+                    <p class="level-item has-text-centered">
+                        <a href="" class="button is-primary is-light">Seguir</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a href="" class="button is-primary is-light">Enviar mensaje</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a href="" class="button is-primary is-light">Contacto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-vertical">
+                        <div class="tile is-child notification">
+                            <p class="title">Detalles</p>
+                            <div class="content">
+                                <strong>Correo:</strong> claude.shannon@example.com <br>
+                                <strong>Ubicación:</strong> Medford, Massachusetts, Estados Unidos <br>
+                                <strong>Asociaciones:</strong> <a href="#">MIT</a> | <a href="#">IBM</a>
+                            </div>
+                        </div>
+                        <div class="tile is-child notification">
+                            <p class="title">Materias</p>
+                            <div class="content">
+                                <a href="class.html">Robótica</a><br>
+                                <a href="class.html">Electrónica Digital</a><br>
+                                <a href="class.html">Criptografía</a><br>
+                                <a href="class.html">Comunicaciones Digitales</a><br>
+                            </div>
+                        </div>
+                        <div class="tile is-child notification">
+                            <p class="title">Publicaciones</p>
+                            <div class="content">
+                                <a href="#">A Mathematical Theory of Communication</a><br>
+                                <a href="#">Analogue of the Vernam System for Continuous Time Series</a><br>
+                                <a href="#">The Best Detection of Pulses</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-vertical">
+                        <div class="tile is-child notification">
+                            <p class="title">Miscelánea</p>
+                            <div class="content">
+                                <a href="#">Resumen de calificaciones</a><br>
+                                <strong>Primer acceso al sitio:</strong> 30 de Abril de 1916, 12:00<br>
+                                <strong>Último acceso al sitio:</strong> 24 de Febrero de 2001, 16:34
+                            </div>
+                        </div>
+                        <div class="tile is-child notification">
+                            <p class="title">Cursos</p>
+                            <div class="content">
+                                <a href="class.html">Malabares Para Genios</a> <span class="tag is-success is-light">terminado</span><br>
+                                <a href="class.html">Introducción a la Teoría de la Información</a> <span class="tag">profesor</span><br>
+                            </div>
+                        </div>
+                        <div class="tile is-child notification">
+                            <p class="title">Posts</p>
+                            <div class="content">
+                                No se han encontrado posts realizados por este usuario.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
