@@ -56,17 +56,21 @@
             </div>
 
             <div class="navbar-end">
-                <div class="navbar-item has-dropdown">
+                <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link is-arrowless">
                         <i class="fa fa-lg fa-bell has-text-grey-light"></i>
                     </a>
 
-                    <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item">
-                            <strong>Usuario</strong> te dejó un comentario en <strong>curso</strong>
-                        </a>
-                        <a class="navbar-item"></a>
-                        <a class="navbar-item"></a>
+                    <div class="navbar-dropdown">
+                        <span class="navbar-item">
+                            <strong>Usuario</strong> te dejó un comentario en <strong> curso</strong>
+                        </span>
+                        <span class="navbar-item">
+                            Parcial 1 de <strong>Redes de Computadoras</strong>.
+                        </span>
+                        <span class="navbar-item">
+                            Recibiste una calificación en <strong>TP 1</strong>.
+                        </span>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -96,23 +100,24 @@
             <div class="tile is-vertical is-parent is-8">
                 <article class="tile is-child notification">
                     <p class="title">Materias</p>
-                    <article class="media notification is-info is-light">
+                    <article class="media notification has-background-white">
                         <figure class="media-left">
                             <p class="image is-64x64">
-                                <img src="https://bulma.io/images/placeholders/128x128.png">
+                                <img src="https://www.investopedia.com/thmb/VTN3cLtndwnxaOIEURZIKeVdy5c=/2120x1414/filters:fill(auto,1)/the-network-and-technology-of-city-in-new-york-usa-1130272752-dbb313c1eba1402aa3bd5d8418189d8b.jpg">
                             </p>
                         </figure>
                         <div class="media-content">
                             <div class="content">
                                 <p>
                                     <span class="subtitle">Redes de Computadoras</span>
-                                    <br> Profesores: Nombre Profesor, Nombre Profesor
-                                    <br> Aula: 505
-                                    <br>
-                                    <i class="fa fa-lg fa-calendar-alt"></i> Horario de cursado
+                                    <br> <strong>Profesores:</strong> <a href="user_profile.html">James Kurouse</a>, <a href="user_profile.html">Keith Ross</a>
+                                    <br> <strong>Aula:</strong> 505
+                                    <br> <a href="#">Ver horarios de cursado</a>
                                 </p>
                                 <nav class="level">
-                                    <div class="level-left"></div>
+                                    <div class="level-left">
+                                        <span>No hay tareas pendientes para hoy.</span>
+                                    </div>
                                     <div class="level-right">
                                         <a href="class.html" class="button">Ir a materia</a>
                                     </div>
@@ -120,11 +125,62 @@
                             </div>
                         </div>
                     </article>
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://www.sigarch.org/wp-content/uploads/2017/03/Welcome-1080x675.jpg">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <span class="subtitle">Sistemas de Computación</span>
+                                    <br> <strong>Profesores:</strong> <a href="user_profile.html">Abraham Silberschatz</a>
+                                    <br> <strong>Aula:</strong> 106
+                                    <br> <a href="#">Ver horarios de cursado</a>
+                                </p>
+                                <div class="level">
+                                    <div class="level-left is-warning has-text-weight-bold">
+                                        <i class="fa fa-exclamation has-text-danger"></i> Tienes <a href="#" class="button is-text">1 tarea</a> pendiente hoy.
+                                    </div>
+                                    <div class="level-right">
+                                        <a href="class.html" class="button">Ir a materia</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </article>
+
 
                 <article class="tile is-child notification">
                     <p class="title">Cursos</p>
-                    <p class="subtitle">Placeholder</p>
+                    <article class="media notification has-background-white">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://gacetamedica.com/wp-content/uploads/2020/02/GettyImages-1201545442-1068x755.jpg">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <span class="subtitle">TICs en épocas de pandemia</span>
+                                    <br> <strong>Profesores:</strong> <a href="user_profile.html">James Kurouse</a>, <a href="user_profile.html">Keith Ross</a>
+                                    <br> <strong>Aula:</strong> 505
+                                    <br> <a href="#">Ver horarios de cursado</a>
+                                </p>
+                                <div class="level">
+                                    <div class="level-left has-text-weight-bold">
+                                        4 nuevos mensajes en el <a href=" #" class="button is-text">foro</a>.
+                                    </div>
+                                    <div class="level-right">
+                                        <a href="class.html" class="button">Ir a Curso</a>
+                                    </div>
+                                    </nav>
+                                </div>
+                            </div>
+                    </article>
+                </article>
                 </article>
 
                 <article class="tile is-child notification">
@@ -177,38 +233,38 @@
                         </tbody>
                     </table>
                 </article>
-            </div>
-            <div class="tile is-vertical is-parent">
-                <article class="tile is-child notification" style="max-height: 350px">
-                    <p class="title">Tareas</p>
-                    <p class="subtitle is-size-7 has-text-weight-bold">HOY</p>
-                    <div class="content">
-                        <div class="field">
-                            <div class="control">
-                                <label class="checkbox">
+                </div>
+                <div class="tile is-vertical is-parent">
+                    <article class="tile is-child notification" style="max-height: 350px">
+                        <p class="title">Tareas</p>
+                        <p class="subtitle is-size-7 has-text-weight-bold">HOY</p>
+                        <div class="content">
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
                                     <input type="checkbox">
                                     TP 1 <a href="#">
                                         <span class="tag is-warning is-light">Sistemas de Computación</span>
                                     </a>
                                 </label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="field has-text-grey-light">
-                            <div class="control">
-                                <label class="checkbox">
+                            <div class="field has-text-grey-light">
+                                <div class="control">
+                                    <label class="checkbox">
                                     <input type="checkbox" checked>
-                                    <span style="text-decoration:line-through">Informe Trabajo Final</span><a href="# ">
-                                        <span class="tag is-warning is-light ">Sistemas de Computación</span>
+                                    <span style="text-decoration:line-through">Informe Trabajo Final</span><a href="#">
+                                        <span class="tag is-warning is-light">Sistemas de Computación</span>
                                     </a>
                                 </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <p class="subtitle is-size-7 has-text-weight-bold ">ESTA SEMANA</p>
-                    <div class="content">
-                        <div class="field">
-                            <div class="control">
-                                <label class="checkbox">
+                        <p class="subtitle is-size-7 has-text-weight-bold">ESTA SEMANA</p>
+                        <div class="content">
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
                                     <input type="checkbox">
                                     Parcial 2 <a href="#">
                                         <span class="tag is-warning is-light">Redes de Computadoras</span>
@@ -217,37 +273,37 @@
                                         30/03/2020
                                     </span>
                                 </label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="field">
-                            <div class="control">
-                                <label class="checkbox">
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
                                     <input type="checkbox">
-                                    Ejercicio 3.3 del libro <a href="# ">
+                                    Ejercicio 3.3 del libro <a href="#">
                                         <span class="tag is-warning is-light">Sistemas Operativos 2</span>
                                     </a>
                                     <span class="tag is-success is-light">
                                         3/04/2020
                                     </span>
                                 </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-                <article class="tile is-child notification" style="max-height: 450px">
-                    <p class="title ">Calendario</p>
-                    <img src="https://miro.medium.com/max/319/1*1olFUW-ckv7XdbWa_bjliw.png">
-                </article>
+                    </article>
+                    <article class="tile is-child notification" style="max-height: 450px">
+                        <p class="title">Calendario</p>
+                        <img src="https://miro.medium.com/max/319/1*1olFUW-ckv7XdbWa_bjliw.png">
+                    </article>
 
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--<footer class="footer ">
-        <div class="content has-text-centered ">
+        <!--<footer class="footer">
+        <div class="content has-text-centered">
             <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com ">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php ">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/ ">CC BY NC SA 4.0</a>.
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
             </p>
         </div>
     </footer>-->
